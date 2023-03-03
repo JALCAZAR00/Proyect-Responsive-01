@@ -1,0 +1,49 @@
+.img-inicio{
+    width: 100%;
+    height: 300px;
+    background-image: url('../asets/img-large.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 25px 0 25px 0;
+}
+.info--container{
+    width: 100%;
+    height: 400px;
+    color: white;
+    margin-bottom: 50px;
+    padding: 15px;
+    background-color: $--first-color;
+    #card-info{
+        border: none;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 500;
+        color: $--variation-color; 
+    }
+    h3:hover{
+        cursor: pointer;
+        color: $--variation-color;
+    }
+    .card-container-info{
+        line-height: 2rem;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        border-bottom: 1px solid $--color-text;
+        padding-bottom: 25px;
+    }
+    p{
+        font-weight: 500;
+        margin-top: 6px;
+        color: $--color-text;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img-inicio{
+        width: 65%;
+        height: 200px;
+        background-image: url('../asets/img-large.jpg');
+    }
+}

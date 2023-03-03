@@ -1,0 +1,153 @@
+
+@include media(tablet){
+    body{
+        width: 100%;
+        padding: 0 calc(10% - 55px);
+        padding-top: 30px;
+    }
+    main{
+        width: 100%;
+        max-width: 930px;
+		height: auto;
+        padding-top: 25px;
+		@include display-grid;
+		@include grid-template-columns(1fr 1fr 1fr 1fr);
+		@include grid-template-rows(250px 250px 250px);
+    }
+    .img-inicio{
+        background-image: url('../asets/img-small.jpg');
+        margin: 0 20px 0 0;
+        width: auto;
+        height: auto;
+        @include grid-row(1,2);
+	    @include grid-column(1,4);
+    }
+    .info--container{
+        width: 100%;
+        height: 460px;
+        margin: 0;
+        h2{
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+        .card-container-info{
+            margin-top: 10px
+        } 
+        @include grid-row(1,3);
+	    @include grid-column(4,5);
+    }
+    .section-main--info{
+        position: relative;
+        display: flex;
+        width: auto;
+        height: auto;
+        max-width: 750px;
+        padding-top: 30px;
+        h1{
+            font-size: 3.5rem;
+            width: 35%;
+            margin-right: 8px;
+        }
+        p{
+            line-height: 2.2rem;
+            font-size: 1.5rem;
+            margin: 0;
+            padding-top: 10px;
+        }
+        a{
+            position: absolute;
+            bottom: 40px;
+            left: calc(50% - 75px);
+        }
+        @include grid-row(2,3);
+	    @include grid-column(1,4);
+    }
+    .target-container{
+        padding-top: 25px;
+        display: flex;
+        @include grid-row(3,4);
+	    @include grid-column(1,5);
+    }
+}
+
+/*--------------- Desktop ---------------*/
+@include media(desktop-s){
+    body{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    main{
+        max-width: 1300px;
+        margin-bottom: 25px
+    }
+    .img-inicio{
+        @include grid-row(1,2);
+	    @include grid-column(1,4);
+    }
+    .info--container{
+        height: auto;
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        h3{
+            font-size: 1.6rem;     
+        }
+        p{
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }      
+        @include grid-row(1,3);
+	    @include grid-column(4,5);
+    }
+    .section-main--info{
+        position: relative;
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: 12px 0;
+        h1{
+            font-size: 4.5rem;
+            width: 35%;
+        }
+        p{
+            line-height: 2.5rem;
+            padding: 15px;
+            font-size: 2rem;
+            margin: 0;
+        }
+        a{
+            position: absolute;
+            bottom: 30px;
+            left: calc(50% - 90px);
+        }
+        @include grid-row(2,3);
+	    @include grid-column(1,4);
+    }
+    .target-container{
+        display: flex;
+        gap: 8px;
+        padding-top: 40px;
+        img{
+            border-radius: 2px;
+            width: 150px;
+            height: 200px;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        @include grid-row(3,4);
+	    @include grid-column(1,5);
+    }
+}

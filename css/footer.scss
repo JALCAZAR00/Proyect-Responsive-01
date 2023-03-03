@@ -1,0 +1,15 @@
+footer{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid $--alternative;
+    padding: 15px;
+    img{
+        width: 50px;
+        height: 30px;
+        margin-top: 6px;
+    }
+    h2{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}

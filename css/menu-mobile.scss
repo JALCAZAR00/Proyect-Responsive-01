@@ -1,0 +1,37 @@
+.inactive{
+    display: none;
+}
+.menu-mobile{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 400px;
+    text-align: start;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;    padding: 80px 6px 0 8px;
+}
+figure{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    width: 45px;
+    height: 25px;
+    background-image: url('../asets/icon-menu-close.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+li{
+    width: 30%;
+    margin: 30px 0;
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+li:hover{
+    cursor: pointer;
+    color: $--variation-color;
+}

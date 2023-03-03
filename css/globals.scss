@@ -1,0 +1,47 @@
+$--first-color: #00001a;
+$--second-color: #f15d51;
+$--variation-color: #e5a854;
+$--color-text: #6f6e74;
+$--alternative: #c0bfc7;
+
+@mixin display-grid {
+    display: -ms-grid;
+    display: grid;
+    
+}
+@mixin grid-template-rows($rows...) {
+    -ms-grid-rows: $rows;
+    grid-template-rows: $rows;
+}
+@mixin grid-template-columns($columns...) {
+    -ms-grid-columns: $columns;
+    grid-template-columns: $columns;
+
+}
+@mixin grid-row($row-start, $row-end) {
+    -ms-grid-row: $row-start;
+    -ms-grid-row-span: $row-end - $row-start;
+    grid-row: #{$row-start} / #{$row-end};
+}
+@mixin grid-column($col-start, $col-end) {
+    -ms-grid-column: $col-start;
+    -ms-grid-column-span: $col-end - $col-start;
+    grid-column: #{$col-start} / #{$col-end};
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+
